@@ -1,0 +1,14 @@
+/*
+	Base styling, needed in every implementation
+*/
+@import '_modaccessible-base';
+
+/*
+	Base template to modify for your own needs
+*/
+@import '_modaccessible-template';
+
+/*
+* Demo style, this is for the demo styling only
+*/
+@import '_demo';

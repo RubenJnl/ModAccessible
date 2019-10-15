@@ -1,0 +1,135 @@
+/*
+  Modal Overlay
+*/
+.modal-overlay {
+  background:rgba(10,10,30,.8);
+}
+
+/*
+  Modal Content Area
+*/
+.modal-content {
+  background: #efefef;
+}
+
+
+/*
+  Close Modal Button
+*/
+.btn-close {
+  font-family: arial;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.btn-close:hover {
+  color: #c12f48;
+}
+
+.btn-close:focus {
+  outline: 1px dotted;
+}
+
+
+
+/*
+* This is for the demo styling only
+*/
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  font-family: arial;
+}
+
+body, html {
+  background: #ffffff;
+  color: #000000;
+  font-size: 20px;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: #921c2b;
+}
+
+a:hover {
+  color: #c12f48;
+}
+
+.content-area {
+  margin: auto;
+  max-width: 900px;
+  padding: 20px;
+}
+
+.menu {
+  background: #000000;
+  border-bottom: 1px solid #bbbbbb;
+  margin: 0;
+  padding: 12px 8px 0;
+  text-align: center;
+}
+
+input[type="submit"],
+input[type="button"] {
+  -webkit-appearance:none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.btn:focus,
+.input:focus,
+.modal-content:focus {
+  outline: 1px solid #cccccc;
+  box-shadow: 0 0 4px #e8a1ad;
+}
+
+.btn {
+  background: #921c2b;
+  border: 1px solid #4d0912;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  line-height: 1;
+  margin-bottom: 12px;
+  padding: 16px 24px;
+  position: relative;
+  text-align: center;
+  transition: transform .2s, background .2s;
+}
+
+.btn:hover, .btn:focus {
+  background: #c12f48;
+  transform: scale(1.1);
+  z-index: 3;
+}
+
+label {
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: .5em;
+}
+
+.input {
+  border: 1px solid #333;
+  display: block;
+  font-size: 1.4em;
+  margin-bottom: 1em;
+  min-width: 230px;
+  padding: 8px;
+  width: 100%;
+}

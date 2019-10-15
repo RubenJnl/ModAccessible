@@ -1,0 +1,39 @@
+/************************************************
+* Modal Overlay
+*************************************************/
+.modal-overlay {
+  background:rgba(33,11,44,.8);
+  /* 
+  * Only use when trouble with z-index and other elements 
+  * &aria-hidden="false"] { z-index: 100; }
+  */
+}
+
+/*************************************************
+* Modal Content Area
+*************************************************/
+.modal-content {
+  background: #e8ecf2;
+  //max-width: 800px;
+  //border-radius: 5px;
+  //padding: 0.5em 1.5em 1.5em;
+}
+
+
+/*************************************************
+* Close Modal Button
+*************************************************/
+.btn-close {
+  font-family: arial;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+  &:focus,
+  &:hover, { 
+    color: #52177e; 
+  }
+  &:focus{ outline: 1px dotted; }
+
+}
+
+

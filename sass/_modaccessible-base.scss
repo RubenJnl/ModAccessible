@@ -1,0 +1,28 @@
+/*************************************************
+* Modal Overlay
+*************************************************/
+.modal-overlay { position: fixed; top: 0; left: 0; display: flex; overflow: auto; padding: 0; transition: opacity .2s; width: 100%; height: 100%; z-index: -1; 
+  
+  &[aria-hidden="true"] { opacity: 0; visibility: hidden; }
+  &[aria-hidden="false"] { opacity: 1; visibility: visible; z-index: 100; }
+}
+
+/*************************************************
+* Modal Content Area
+*************************************************/
+.modal-content { margin: auto; max-width: 800px; overflow: auto; overflow-x: hidden; padding: 1rem; position: relative; transition: transform .3s; width: 100%; transform: scale(0.7); 
+	.modal-overlay[aria-hidden="false"] & { transform: scale(1); }
+}
+
+
+/*************************************************
+* General Modal Content
+*************************************************/
+#modal-title { margin-top: 0; padding-right: 1.25em; }
+
+/*************************************************
+* Close Modal Button
+*********************************/
+.btn-close { position: absolute; right: .25rem; top: .25rem; padding: 0; border: none; cursor: pointer; background: none; z-index: 2; font-size: 2rem; font-family: arial; line-height: 1; font-weight: 800;  
+	&:focus { transform: scale(1.1); outline: 1px dotted;}
+}
